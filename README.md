@@ -21,7 +21,7 @@ Optional: `pip install -r requirements-spark.txt` (needs Java 17) for Spark SQL,
 
 ## Pages
 Home · Architecture (ETL, ELT, Lakehouse, Streaming; downloadable `.mmd` / `.dot`) · Analytics · E-commerce · Banking ·
-Healthcare · Data Quality · Monitoring · PySpark · Databricks · Docs.
+Healthcare · Data Quality · Monitoring · PySpark · Databricks · Docs · Work Experience · Contact.
 
 ## Code map
 | Path | Purpose |

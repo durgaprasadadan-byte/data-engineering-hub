@@ -17,8 +17,8 @@ load_dotenv(ROOT_DIR / ".env")
 
 @dataclass(frozen=True)
 class Settings:
-    app_name: str = "Data Engineering Hub"
-    tagline: str = "Building Scalable, Reliable, and Intelligent Data Pipelines."
+    app_name: str = "Durga Prasad Jinna"
+    tagline: str = "Data Engineering Hub, Building Scalable, Reliable, and Intelligent Data Pipelines."
     env: str = os.getenv("APP_ENV", "local")
     log_level: str = os.getenv("LOG_LEVEL", "INFO")
     logs_dir: Path = ROOT_DIR / "logs"

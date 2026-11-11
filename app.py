@@ -26,6 +26,8 @@ navigation = st.navigation(
             st.Page("pages/08_PySpark.py", title="PySpark Processing", icon="⚡"),
             st.Page("pages/09_Databricks.py", title="Databricks", icon="🧱"),
             st.Page("pages/10_Docs.py", title="Docs & GitHub", icon="📚"),
+            st.Page("pages/12_Work_Experience.py", title="Work Experience", icon="💼"),
+            st.Page("pages/13_Contact.py", title="Contact", icon="✉️"),
         ],
     }
 )
