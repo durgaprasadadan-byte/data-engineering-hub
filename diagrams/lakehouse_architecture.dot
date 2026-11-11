@@ -1,0 +1,16 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style="rounded,filled", fillcolor="#F1F5F9", color="#64748B", fontname="Helvetica"];
+  edge [color="#475569"];
+  src [label="Source Systems\n(Databases, files, APIs)"];
+  lake [label="Data Lake\n(Object storage (S3 / GCS / local))"];
+  dl [label="Delta Lake\n(Delta Lake)"];
+  dbx [label="Databricks\n(Databricks workspace)"];
+  spk [label="Spark Processing\n(PySpark, Spark SQL)"];
+  ana [label="Analytics\n(BI, ML, Streamlit)"];
+  src -> lake;
+  lake -> dl;
+  dl -> dbx;
+  dbx -> spk;
+  spk -> ana;
+}

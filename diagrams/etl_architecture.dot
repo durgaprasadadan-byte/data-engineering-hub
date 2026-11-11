@@ -1,0 +1,18 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style="rounded,filled", fillcolor="#F1F5F9", color="#64748B", fontname="Helvetica"];
+  edge [color="#475569"];
+  src [label="Data Sources\n(CSV, JSON, PostgreSQL, REST APIs)"];
+  ext [label="Extraction\n(Python, Pandas)"];
+  stg [label="Staging\n(Parquet / local files)"];
+  trf [label="Transformation\n(Pandas / PySpark)"];
+  val [label="Validation\n(Custom DQ framework)"];
+  dwh [label="Data Warehouse\n(PostgreSQL / Parquet)"];
+  ana [label="Analytics\n(Streamlit, Plotly)"];
+  src -> ext;
+  ext -> stg;
+  stg -> trf;
+  trf -> val;
+  val -> dwh;
+  dwh -> ana;
+}

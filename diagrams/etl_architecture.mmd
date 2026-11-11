@@ -1,0 +1,14 @@
+flowchart LR
+  src["Data Sources<br/><i>CSV, JSON, PostgreSQL, REST APIs</i>"]
+  ext["Extraction<br/><i>Python, Pandas</i>"]
+  stg["Staging<br/><i>Parquet / local files</i>"]
+  trf["Transformation<br/><i>Pandas / PySpark</i>"]
+  val["Validation<br/><i>Custom DQ framework</i>"]
+  dwh["Data Warehouse<br/><i>PostgreSQL / Parquet</i>"]
+  ana["Analytics<br/><i>Streamlit, Plotly</i>"]
+  src --> ext
+  ext --> stg
+  stg --> trf
+  trf --> val
+  val --> dwh
+  dwh --> ana

@@ -1,0 +1,12 @@
+flowchart LR
+  src["Source Systems<br/><i>Databases, files, APIs</i>"]
+  lake["Data Lake<br/><i>Object storage (S3 / GCS / local)</i>"]
+  dl["Delta Lake<br/><i>Delta Lake</i>"]
+  dbx["Databricks<br/><i>Databricks workspace</i>"]
+  spk["Spark Processing<br/><i>PySpark, Spark SQL</i>"]
+  ana["Analytics<br/><i>BI, ML, Streamlit</i>"]
+  src --> lake
+  lake --> dl
+  dl --> dbx
+  dbx --> spk
+  spk --> ana

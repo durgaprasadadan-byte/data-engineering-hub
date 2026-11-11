@@ -1,0 +1,14 @@
+flowchart LR
+  src["Data Sources<br/><i>CSV, JSON, APIs, databases</i>"]
+  ing["Ingestion<br/><i>Python, PySpark</i>"]
+  raw["Raw Storage<br/><i>Local files / S3 / GCS</i>"]
+  brz["Bronze<br/><i>Delta Lake</i>"]
+  slv["Silver<br/><i>Spark SQL, Delta Lake</i>"]
+  gld["Gold<br/><i>Spark SQL, Delta Lake</i>"]
+  ana["Analytics<br/><i>Streamlit, Plotly</i>"]
+  src --> ing
+  ing --> raw
+  raw --> brz
+  brz --> slv
+  slv --> gld
+  gld --> ana

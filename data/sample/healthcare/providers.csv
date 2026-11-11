@@ -1,0 +1,41 @@
+provider_id,specialty,state,hospital
+PR001,Neurology,FL,St. Mary
+PR002,Cardiology,TX,Riverside
+PR003,Primary Care,NY,Lakeview
+PR004,Neurology,CA,Lakeview
+PR005,Oncology,NY,Lakeview
+PR006,Orthopedics,TX,General
+PR007,Cardiology,NY,St. Mary
+PR008,Oncology,FL,St. Mary
+PR009,Cardiology,FL,Riverside
+PR010,Orthopedics,FL,St. Mary
+PR011,Primary Care,NY,St. Mary
+PR012,Primary Care,CA,Lakeview
+PR013,Neurology,TX,Lakeview
+PR014,Orthopedics,NY,Riverside
+PR015,Orthopedics,WA,St. Mary
+PR016,Orthopedics,WA,St. Mary
+PR017,Primary Care,CA,St. Mary
+PR018,Primary Care,CA,General
+PR019,Cardiology,TX,Riverside
+PR020,Primary Care,FL,Riverside
+PR021,Oncology,CA,General
+PR022,Primary Care,TX,St. Mary
+PR023,Primary Care,TX,General
+PR024,Oncology,FL,General
+PR025,Primary Care,FL,Lakeview
+PR026,Orthopedics,NY,Riverside
+PR027,Cardiology,CA,Lakeview
+PR028,Cardiology,CA,St. Mary
+PR029,Orthopedics,FL,General
+PR030,Orthopedics,TX,St. Mary
+PR031,Oncology,WA,General
+PR032,Orthopedics,CA,St. Mary
+PR033,Primary Care,WA,Riverside
+PR034,Oncology,WA,Riverside
+PR035,Oncology,FL,Riverside
+PR036,Primary Care,FL,General
+PR037,Orthopedics,CA,St. Mary
+PR038,Orthopedics,NY,St. Mary
+PR039,Oncology,CA,General
+PR040,Cardiology,TX,Lakeview

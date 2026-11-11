@@ -1,0 +1,14 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style="rounded,filled", fillcolor="#F1F5F9", color="#64748B", fontname="Helvetica"];
+  edge [color="#475569"];
+  src [label="Data Sources\n(Event producers)"];
+  kfk [label="Kafka\n(Apache Kafka)"];
+  sss [label="Spark Structured Streaming\n(PySpark)"];
+  dl [label="Delta Lake\n(Delta Lake)"];
+  mon [label="Monitoring\n(Streamlit, logs)"];
+  src -> kfk;
+  kfk -> sss;
+  sss -> dl;
+  dl -> mon;
+}

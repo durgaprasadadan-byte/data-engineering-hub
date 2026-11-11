@@ -1,0 +1,10 @@
+flowchart LR
+  src["Data Sources<br/><i>Event producers</i>"]
+  kfk["Kafka<br/><i>Apache Kafka</i>"]
+  sss["Spark Structured Streaming<br/><i>PySpark</i>"]
+  dl["Delta Lake<br/><i>Delta Lake</i>"]
+  mon["Monitoring<br/><i>Streamlit, logs</i>"]
+  src --> kfk
+  kfk --> sss
+  sss --> dl
+  dl --> mon

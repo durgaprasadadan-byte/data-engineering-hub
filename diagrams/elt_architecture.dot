@@ -1,0 +1,18 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style="rounded,filled", fillcolor="#F1F5F9", color="#64748B", fontname="Helvetica"];
+  edge [color="#475569"];
+  src [label="Data Sources\n(CSV, JSON, APIs, databases)"];
+  ing [label="Ingestion\n(Python, PySpark)"];
+  raw [label="Raw Storage\n(Local files / S3 / GCS)"];
+  brz [label="Bronze\n(Delta Lake)"];
+  slv [label="Silver\n(Spark SQL, Delta Lake)"];
+  gld [label="Gold\n(Spark SQL, Delta Lake)"];
+  ana [label="Analytics\n(Streamlit, Plotly)"];
+  src -> ing;
+  ing -> raw;
+  raw -> brz;
+  brz -> slv;
+  slv -> gld;
+  gld -> ana;
+}

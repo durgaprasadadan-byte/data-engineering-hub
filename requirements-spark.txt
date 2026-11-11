@@ -1,0 +1,9 @@
+# Optional: Spark, Delta Lake, PostgreSQL and Databricks. Needs a Java 17 runtime. Install with:
+#   pip install -r requirements.txt -r requirements-spark.txt
+pyspark>=3.5,<3.6
+delta-spark>=3.2,<3.3
+sqlalchemy>=2.0
+psycopg2-binary>=2.9
+databricks-sql-connector>=3.0
+# Airflow is installed separately following the official constraints-file instructions
+# (https://airflow.apache.org/docs/apache-airflow/stable/installation/), then copy airflow/dags/ into your dags folder.
